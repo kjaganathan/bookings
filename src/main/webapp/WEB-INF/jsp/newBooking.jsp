@@ -40,7 +40,7 @@
 		    </div>
 			<button type="submit" class="btn btn-primary">Book ClubHouse</button>
 		</form>
-		<script src="/webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
 		<script src="/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<script src="/webjars/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 		<script type="text/javascript">

@@ -1,5 +1,5 @@
 <link href="/webjars/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-<script src="/webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
 <script src="/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="#">Club House Booking System</a>
