@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.sutherland.games.enums.BookingStatus;
 import com.sutherland.games.model.Booking;
 import com.sutherland.games.service.BookingService;
 
@@ -42,7 +41,6 @@ public class BookingController {
 	@PostMapping("/bookings/new")
 	public String bookingsNew(@ModelAttribute @Valid Booking booking) {
 		log.info("adding new booking... {} "+booking);
-		booking.setStatus(BookingStatus.Booked.name());
 		bookingService.save(booking);
 		return "redirect:/bookings";
 	}

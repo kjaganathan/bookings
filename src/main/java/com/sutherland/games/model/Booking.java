@@ -43,7 +43,7 @@ public class Booking {
 	@NotNull(message = "from date is required")
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	@Temporal(TemporalType.DATE)
-	private Date bokingFrom;
+	private Date bookingFrom;
 
 	@NotNull(message = "to date is required")
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
