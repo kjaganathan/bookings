@@ -1,10 +1,7 @@
 package com.sutherland.games;
 
-import org.junit.jupiter.api.Test;
+public class GamesApplicationTests {
 
-class GamesApplicationTests {
-
-	@Test
 	void contextLoads() {
 	}
 
