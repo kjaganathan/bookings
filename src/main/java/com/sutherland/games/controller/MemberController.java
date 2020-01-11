@@ -37,5 +37,12 @@ public class MemberController {
 		memberService.save(member);
 		return "redirect:/members";
 	}
+	
+	@PostMapping("/register")
+	public String register(@ModelAttribute @Valid Member member) {
+		log.fine("register add new");
+		member = memberService.register(member);
+		return "redirect:/home?message=You have successfully registered. login with phone or email and given password while registering yourself";
+	}
 
 }

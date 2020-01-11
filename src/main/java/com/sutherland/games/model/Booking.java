@@ -55,7 +55,7 @@ public class Booking {
 
 	@Valid
 	@NotNull(message = "member information is required")
-	@ManyToOne(cascade = CascadeType.PERSIST)
+	@ManyToOne(cascade = CascadeType.REFRESH)
 	@JoinColumn(columnDefinition = "member_id")
 	private Member member;
 

@@ -12,6 +12,7 @@ import com.sutherland.games.exception.NotAvailableException;
 import com.sutherland.games.model.Booking;
 import com.sutherland.games.repository.BookingRepository;
 import com.sutherland.games.service.BookingService;
+import com.sutherland.games.util.AppConstats;
 
 import lombok.RequiredArgsConstructor;
 
@@ -41,5 +42,20 @@ public class BookingServiceImpl implements BookingService {
 		List<Booking> bookings1 = bookingRepository.findBokingFromGreaterThanOrEqual(booking.getBookingFrom(), BookingStatus.Booked.name());
 		List<Booking> bookings2 = bookingRepository.findBokingToLessThanOrEqual(booking.getBookingTo(), BookingStatus.Booked.name());
 		return CollectionUtils.isEmpty(bookings1) && CollectionUtils.isEmpty(bookings2);
+	}
+
+	@Override
+	public List<Booking> findByMemberId(String searchText) {
+		return bookingRepository.findByMemberId(AppConstats.getSessionUser().getId());
+	}
+
+	@Override
+	public void confirmBooking(Long bookingId) {
+		bookingRepository.updateBooking(BookingStatus.Booked.name(), bookingId);
+	}
+
+	@Override
+	public void deleteBooking(Long bookingId) {
+		bookingRepository.deleteBooking(bookingId, AppConstats.getSessionUser().getId());
 	}
 }

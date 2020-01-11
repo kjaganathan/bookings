@@ -11,4 +11,6 @@ public interface MemberService {
 
 	Page<Member> findAll(Pageable pageable);
 
+	Member register(Member member);
+
 }
