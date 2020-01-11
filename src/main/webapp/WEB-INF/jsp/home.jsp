@@ -28,6 +28,9 @@
 		    		you will be redirected to the your list of bookings. You can select any of the booking click on correct symbol
 		    		to confirm booking.
 		    	</li>
+		    	<li>
+		    		For any clarification please call +91-99-7077-2631
+		    	</li>
 		    </ul> 
 		  </div>
 		</div>

@@ -20,13 +20,13 @@
 				<input type="hidden" name="member.flatNo" value="${member.flatNo}">
 				<c:if test="userDetails == null">
 					<div class="form-group">
-						<input type="text" class="form-control" id="name" name="member.name" placeholder="Member Name">
+						<input type="text" class="form-control" id="name" name="member.name" placeholder="Member Name" required="required">
 					</div>
 					<div class="form-group">
 						<input type="email" class="form-control" id="email" name="member.email" placeholder="Email">
 					</div>
 					<div class="form-group">
-						<input type="tel" class="form-control" id="phone" name="member.phone" placeholder="Phone">
+						<input type="tel" class="form-control" id="phone" name="member.phone" placeholder="Phone" required="required">
 					</div>
 					<div class="input-group mb-2">
 						 <div class="input-group-prepend">
@@ -39,23 +39,23 @@
 				          	</select>
 				          </div>
 				        </div>
-						<input type="number" class="form-control" id="flatNo" name="member.flatNo" placeholder="Flat No">
+						<input type="number" class="form-control" id="flatNo" name="member.flatNo" placeholder="Flat No" required="required">
 					</div>
 				</c:if>
 				<div class="form-group">
-					<input type="text" class="form-control" id="reason" name="reason" placeholder="Reason">
+					<input type="text" class="form-control" id="reason" name="reason" placeholder="Reason" required="required">
 				</div>
 			    <div class="form-group input-group mb-2">
 			        <div class="input-group-prepend">
 			          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
 			        </div>
-					<input type="text" class="form-control" id="bookingFrom" name="bookingFrom" placeholder="Booking From">
+					<input type="text" class="form-control" id="bookingFrom" name="bookingFrom" placeholder="Booking From" required="required">
 			    </div>
 			    <div class="form-group input-group mb-2">
 			        <div class="input-group-prepend">
 			          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
 			        </div>
-					<input type="text" class="form-control" id="bookingTo" name="bookingTo" placeholder="Booking To">
+					<input type="text" class="form-control" id="bookingTo" name="bookingTo" placeholder="Booking To" required="required">
 			    </div>
 			    <div class="form-group">
 					<button type="submit" class="btn btn-primary">Book ClubHouse</button>
